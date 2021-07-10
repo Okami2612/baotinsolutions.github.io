@@ -1,0 +1,174 @@
+#banner{
+    .banner{
+        background: url("./assets/bg-1.jpg");        
+        height: 80vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+
+        h1{
+            color: #ffffff;
+            font-size: 70px;
+            padding-top: 150px;
+        }
+        p{
+            font-size: 30px;
+            color: #ffffff;
+        }
+        a{
+            border: 1px solid  #f7dc6f;
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 20px;
+            padding: 10px 30px;
+            background: rgba(232, 201, 23, 0.43);
+            text-decoration: none;
+            transition: all 1s;
+        }
+        a:hover{
+            background: none;
+        }
+    }
+}
+#gallery{
+    .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;        
+        .wrapper-s{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1em;
+            .w-img{
+                opacity: 0.5;
+                img{
+                    width: 360px;
+                }
+                h2{
+                    position: absolute;
+                    padding: 20px;
+                    margin: 8px;
+                    border-radius: 5px;
+                    background: rgba(0, 0, 0, 0.5);
+                }
+            }
+            .w-img:hover{
+                opacity: 1;
+            }
+        }
+        .w-img-mid{
+            height: 95%;
+            opacity: 0.5;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                overflow: hidden;
+            }
+            h2{
+                position: absolute;
+                padding: 20px;
+                background: rgba(0, 0, 0, 0.5);
+                margin: 8px;
+                border-radius: 5px;
+            }
+        }
+        .w-img-mid:hover{
+            opacity: 1;
+        }
+    }
+}
+#best-seller{
+    #bs-slider{
+        width: 100%;
+        height: 450px;
+        object-fit: contain;
+        cursor: pointer;
+        border: 1px solid #aeb6bf;
+    }
+    .bs-thumbnail{
+        object-fit: cover;
+        max-width: 100px;
+        height: 80px;
+        cursor: pointer;
+        opacity: 0.5;
+        margin: 5px;
+        border: 2px solid #aeb6bf;
+    }
+    .bs-thumbnail:hover{
+        opacity: 1;
+    }
+    .active{
+        opacity: 1;
+    }
+    .socials{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .socials .btn{
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        margin-right: 20px;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        box-shadow: -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 3px 5px 0px #0001,
+        inset 0px 0px 0px 0px #fff9,
+        inset 0px 0px 0px 0px #0001,
+        inset 0px 0px 0px 0px #fff9,
+        inset 0px 0px 0px 0px #0001;
+        transition: box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+        transition: all 0.5s ease;
+        color: rgba(42,52,84,1);
+        text-decoration: none;
+    }
+    .socials .btn i{
+        font-size: 22px;
+        margin-top: 5px;
+        margin-right: 5px;
+    }    
+}
+#m-info{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    h2{
+        color: black;
+        font-size: 60px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    p{
+        font-size: 22px;
+    }
+    a{
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: 600;
+        color: #ffffff;
+        background: #f7dc6f;
+        border: 1px solid #f7dc6f;
+        padding: 10px 30px;
+        transition: all 1s;
+        
+    }
+    a:hover{
+        background: none;
+        color: black;
+    }
+    .mid-more{
+        margin-top: 30px;
+        .mid-content{
+            display: flex;
+            i{
+                font-size: 30px;
+                color: aqua;
+            }
+        } 
+    }
+}

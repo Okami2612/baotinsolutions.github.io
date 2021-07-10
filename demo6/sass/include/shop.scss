@@ -1,0 +1,56 @@
+#shop{
+    .owl-carousel .item .product a{
+        overflow: hidden;
+    }
+    .owl-carousel .item .product img{
+        transition: transform .5s ease;
+    }
+    .owl-carousel .item .product img:hover{
+        transform: scale(1.1);
+    }
+    .owl-carousel .owl-nav button{
+        position: absolute;
+        top: 30%;
+        outline: none;
+    }
+    .owl-carousel .owl-nav button.owl-prev{
+        left: 0;
+    }
+    .owl-carousel .owl-nav button.owl-prev span,
+    .owl-carousel .owl-nav button.owl-next span{
+        font-size: 35px;
+        color: $color-primary;        
+        padding: 0 1rem;
+    }
+    .owl-carousel .owl-nav button.owl-prev span{
+        margin-left: -4rem;
+    }
+    .owl-carousel .owl-nav button.owl-next{
+        right: 0;
+    }
+    .owl-carousel .owl-nav button.owl-next span{        
+        margin-right: -4rem;        
+    }
+
+    .button-group{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .grid .grid-item{
+        margin-right: 1.2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        height: 300px;
+    }
+    .grid .grid-item .item{
+        width: 190px;
+    }
+    .grid .grid-item .item .product img{
+        padding: 5px;
+        overflow: hidden;
+        object-fit: cover;
+        width: 180px;
+        height: 160px;
+    }
+}
