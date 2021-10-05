@@ -326,11 +326,14 @@ img{
     background-color: #fff;
 }
 /* About */
-.about_img{
+/* .about_img{
     width: 200px;
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
+} */
+.about_data-left{
+    padding: 30px;
 }
 .about_description{
     text-align: center;
@@ -357,6 +360,31 @@ img{
     display: flex;
     justify-content: center;
 }
+.about_data-right{
+    padding: 30px;
+}
+.about_data-right h1{
+    text-align: center;
+}
+.about_data-right .about-content{
+    display: flex;
+    flex-direction: column;
+}
+.about_data-right .about-content ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.about_data-right .about-content ul li{
+    display: flex;
+    flex-direction: column;
+    font-size: .75rem;
+    text-align: center;
+}
+.about_data-right .about-content ul li i{
+    font-size: 3rem;
+}
+
 /* Skills */
 .skills_container{
     row-gap: 0;
